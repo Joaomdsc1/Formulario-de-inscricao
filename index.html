@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+
+<head>
+  <h1 id='title'>Formulário de Inscrição</h1>
+  <p id='description'>Por favor compartilhe seus dados para darmos início ao seu cadastro.</p>
+</head>
+<body>
+  <form id='survey-form'> 
+    <label for='name' id='name-label'>Insira o seu nome: 
+      <input id='name' required type='text' placeholder='Seu nome aqui'> 
+    </label>
+
+    <label for='email' id='email-label' >Insira o seu e-mail: 
+      <input id='email' required type='email' placeholder='Seu e-mail aqui'>
+    </label>
+    
+    <label for='number' id='number-label'> Insira a sua idade: 
+      <input id='number' required type='number' min='13' max='120' placeholder='Sua idade aqui'>
+    </label>
+  <label> Como você descobriu a empresa?
+  <select id="dropdown">
+    <option value="">
+      Selecione uma resposta
+    </option>
+    <option value="Linkedin">
+      Linkedin
+    </option>
+    <option value="Instagram">
+      Instagram
+    </option>
+    <option value="Facebook">
+      Facebook
+    </option>
+    <option value="Outro">
+      Outro
+    </option>
+  </select>
+  </label>
+
+  <label for='pessoa'> Você está se inscrevendo como pessoa física ou jurídica
+    <input type='radio' name='pessoa' value='fisica' >Pessoa Física
+    <input type='radio' name='pessoa' value='juridica'>Pessoa Jurídica
+  </label>
+
+  <label for='estado-civil'>Qual ramo da empresa mais te interessa?
+    <input type='checkbox' name='ramo' value='inovacao'>Inovação
+    <input type='checkbox' name='ramo' value='dados'>Dados
+    <input type='checkbox' name='ramo' value='desenvolvimento'>Desenvolvimento
+  </label>
+  <label> Por que você se considera um bom candidato para a empresa?
+    <textarea max='1500'>
+      Escreva sua resposta em até 1500 caracteres
+    </textarea>
+  </label>
+  <button id='submit'>Submit</button>
+  </form>
+</body>
