@@ -2,6 +2,7 @@
 <meta charset='utf-8'>
 
 <head>
+  <link rel="stylesheet" href="styles.css">
   <h1 id='title'>Formulário de Inscrição</h1>
   <p id='description'>Por favor compartilhe seus dados para darmos início ao seu cadastro.</p>
 </head>
@@ -38,15 +39,19 @@
   </select>
   </label>
 
-  <label for='pessoa'> Você está se inscrevendo como pessoa física ou jurídica
-    <input type='radio' name='pessoa' value='fisica' >Pessoa Física
-    <input type='radio' name='pessoa' value='juridica'>Pessoa Jurídica
+  <label for='pessoa'> Você está se inscrevendo como pessoa física ou jurídica <br>
+    <input type='radio' name='pessoa' value='fisica' >Pessoa Física <br>
+    <input type='radio' name='pessoa' value='juridica'>Pessoa Jurídica <br>
   </label>
 
-  <label for='estado-civil'>Qual ramo da empresa mais te interessa?
-    <input type='checkbox' name='ramo' value='inovacao'>Inovação
-    <input type='checkbox' name='ramo' value='dados'>Dados
-    <input type='checkbox' name='ramo' value='desenvolvimento'>Desenvolvimento
+  <label for='estado-civil'>Qual ramo da empresa mais te interessa? (Máx. 2) <br>
+    <input type='checkbox' name='ramo' value='inovacao'>Inovação <br>
+    <input type='checkbox' name='ramo' value='dados'>Dados<br>
+    <input type='checkbox' name='ramo' value='desenvolvimento'>Desenvolvimento<br>
+    <input type='checkbox' name='ramo' value='projeto'>Projeto<br>
+    <input type='checkbox' name='ramo' value='compras'>Compras<br>
+    <input type='checkbox' name='ramo' value='vendas'>Vendas<br>
+    <input type='checkbox' name='ramo' value='marketing'>Marketing<br>
   </label>
   <label> Por que você se considera um bom candidato para a empresa?
     <textarea max='1500'>
